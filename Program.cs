@@ -6,10 +6,11 @@ namespace P1_Base
     {
         static void Main(string[] args)
         {
-            int a = -1, b = -1;
-            string sa, sb;
+            int b = -1;
             int[] primes = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43,
                            47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97};
+            List<int> aPrimeFactors = new List<int>();
+            List<int> bPrimeFactors = new List<int>();
 
             bool isContinue = true;
 
@@ -17,17 +18,19 @@ namespace P1_Base
             {
                 bool aValid = false, bValid = false;
                 Console.WriteLine("Enter the first number:");
+
                 while (!aValid)
                 {
-                    sa = Console.ReadLine();
-                    try
+                    string? stringA = Console.ReadLine();
+
+                    if (Int32.TryParse(stringA, out int a))
                     {
-                        a = Int32.Parse(sa);
                     }
-                    catch (Exception e)
+                    else
                     {
-                        Console.WriteLine("{0} is not a valid integer.", sa);
+                        Console.WriteLine("{0} is not a valid integer.", stringA ?? "null");
                     }
+
                     if (a < 1 || a > 100)
                         Console.WriteLine("Please enter a number between 1 and 100.");
                     else
@@ -37,14 +40,14 @@ namespace P1_Base
                 Console.WriteLine("Enter the second number:");
                 while (!bValid)
                 {
-                    sb = Console.ReadLine();
+                    string? stringB = Console.ReadLine();
                     try
                     {
-                        b = Int32.Parse(sb);
+                        b = Int32.Parse(stringB);
                     }
                     catch (Exception e)
                     {
-                        Console.WriteLine("{0} is not a valid integer.", sb);
+                        Console.WriteLine("{0} is not a valid integer.", stringB);
                     }
                     if (b < 1 || b > 100)
                         Console.WriteLine("Please enter a number between 1 and 100.");
@@ -56,7 +59,7 @@ namespace P1_Base
 
 
                 Console.WriteLine("\nDo you want to continue? Y/N");
-                string newLoop = Console.ReadLine();
+                string? newLoop = Console.ReadLine();
                 if (newLoop[0] == 'Y' || newLoop[0] == 'y')
                 {
                     Console.WriteLine();
