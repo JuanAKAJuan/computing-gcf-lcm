@@ -1,3 +1,4 @@
+### TODO
 - [ ] Declare two List<int> objects to store the prime factors of two integers a and b.
 - [ ] Write an algorithm to implement the factorization process. The base program defined
 an integer array variable named primes to represent the prime numbers less than 100.
