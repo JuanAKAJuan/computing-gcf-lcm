@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Prime Factorization Calculator", "index.html", [
-    [ "TODO", "md_README.html", null ],
+    [ "Prime Factorization Calculator", "md_README.html", null ],
     [ "Packages", "namespaces.html", [
       [ "Package List", "namespaces.html", "namespaces_dup" ]
     ] ],
