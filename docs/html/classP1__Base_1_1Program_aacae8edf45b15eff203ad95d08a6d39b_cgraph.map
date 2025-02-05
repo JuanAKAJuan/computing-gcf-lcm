@@ -1,0 +1,9 @@
+<map id="P1_Base.Program.Main" name="P1_Base.Program.Main">
+<area shape="rect" id="Node000001" title="The main entry point of the program. Handles user input to calculate the Greatest Common Factor (GCF)..." alt="" coords="5,65,177,93"/>
+<area shape="rect" id="Node000002" href="$classP1__Base_1_1Program.html#a1cc6addcbf47f55a2c9ab12e30e2a71b" title="Returns a list of prime factors for a given integer number. The function performs prime factorization..." alt="" coords="238,5,436,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,62,224,42,256,34,257,40,225,47,146,67"/>
+<area shape="rect" id="Node000003" href="$classP1__Base_1_1Program.html#a4b90880489306a07e7e88421fbb95668" title="Finds the common prime factors between two lists of prime factors." alt="" coords="225,57,449,102"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="177,76,209,76,209,82,177,82"/>
+<area shape="rect" id="Node000004" href="$classP1__Base_1_1Program.html#a9f13b3e41c87af64647a7e6925790456" title="Calculates the Least Common Multiple (LCM) of two numbers using their prime factorizations...." alt="" coords="237,126,437,171"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="143,91,241,119,240,124,142,96"/>
+</map>

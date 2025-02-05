@@ -1,0 +1,5 @@
+<map id="P1_Base.Program.Factorize" name="P1_Base.Program.Factorize">
+<area shape="rect" id="Node000001" title="Returns a list of prime factors for a given integer number. The function performs prime factorization..." alt="" coords="225,5,423,33"/>
+<area shape="rect" id="Node000002" href="$classP1__Base_1_1Program.html#aacae8edf45b15eff203ad95d08a6d39b" title="The main entry point of the program. Handles user input to calculate the Greatest Common Factor (GCF)..." alt="" coords="5,5,177,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,22,177,22,177,16,209,16"/>
+</map>
