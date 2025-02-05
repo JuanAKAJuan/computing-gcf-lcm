@@ -1,3 +1,10 @@
+# Prime Factorization Calculator
+
+### How to run
+```bash
+dotnet run
+```
+
 ### TODO
 - [x] Declare two List<int> objects to store the prime factors of two integers a and b.
 - [x] Write an algorithm to implement the factorization process. The base program defined
