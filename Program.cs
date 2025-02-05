@@ -4,10 +4,43 @@ namespace P1_Base
 {
     class Program
     {
+        static List<int> Factorize(int number)
+        {
+            List<int> factors = new List<int>();
+
+            if (number < 2)
+            {
+                return factors;
+            }
+
+            // Handle even factors
+            while (number % 2 == 0)
+            {
+                factors.Add(2);
+                number /= 2;
+            }
+
+            int divisor = 3;
+            while ((divisor * divisor) <= number)
+            {
+                while (number % divisor == 0)
+                {
+                    factors.Add(divisor);
+                    number /= divisor;
+                }
+                divisor += 2;
+            }
+
+            if (number > 1)
+            {
+                factors.Add(number);
+            }
+
+            return factors;
+        }
+
         static void Main(string[] args)
         {
-            int[] primes = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43,
-                           47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97};
             List<int> aPrimeFactors = new List<int>();
             List<int> bPrimeFactors = new List<int>();
             bool isContinue = true;
@@ -28,6 +61,8 @@ namespace P1_Base
                         }
                         else
                         {
+                            aPrimeFactors = Factorize(a);
+                            Console.WriteLine(string.Join(" ", aPrimeFactors));
                             aValid = true;
                         }
                     }
@@ -50,6 +85,8 @@ namespace P1_Base
                         }
                         else
                         {
+                            bPrimeFactors = Factorize(b);
+                            bPrimeFactors.ForEach(Console.WriteLine);
                             bValid = true;
                         }
                     }
@@ -58,8 +95,6 @@ namespace P1_Base
                         Console.WriteLine("{0} is not a valid integer.", stringB ?? "null");
                     }
                 }
-
-                // Enter your code here.
 
 
                 Console.WriteLine("\nDo you want to continue? Y/N");
