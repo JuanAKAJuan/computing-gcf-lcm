@@ -1,6 +1,8 @@
 # Prime Factorization Calculator
+![Screenshot_20250204_210843](https://github.com/user-attachments/assets/107990ba-d716-4a4a-bfbb-6ea58e1de66b)
 
-### How to run
+
+To run the program:
 ```bash
 dotnet run
 ```
